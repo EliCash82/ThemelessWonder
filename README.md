@@ -1,16 +1,17 @@
 # Themeless Wonder
 
-Demonstration of
+Demonstration of Messaging System using **MEAN Stack**.
 
-Messaging System
+Uses:
 
-# NODEJS + ANGULAR SAMPLE
+| Package   | Summary |
+| --------- | ------- |
+| NodeJS    | x       |
+| Angular2  | x       |
+| ExpressJS | x       |
+| MongoDB   |         |
 
-CURRENT STATE:
-
-HELLO WORLD
-
-GOALS:
+**GOALS:**
 
 * Fully featured single page message app
 * animated CSS character at bottom of screen
