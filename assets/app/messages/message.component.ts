@@ -25,6 +25,8 @@ export class MessageComponent {
   @Input() message: Message;
   @Output() editClicked = new EventEmitter<string>();
 
+  color = "#fec733";
+
   onEdit() {
     this.editClicked.emit('THEMELESS HARDCODORE VALUE!');
   }
