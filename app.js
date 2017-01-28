@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 var appRoutes = require('./routes/app');
+var messageRoutes = require('./routes/messages');
 
 var app = express();
 mongoose.connect('localhost:27017/cookiejar');
@@ -36,7 +37,9 @@ app.use(function (req, res, next) {
 
 //End middleware (?)
 
+app.use('/message', messageRoutes);
 app.use('/', appRoutes);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
