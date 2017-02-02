@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from "@angular/core";
+import { Component, Input, } from "@angular/core";
 import { Message } from "./message.model";
 import { MessageService } from "./message.service";
 
@@ -24,18 +24,20 @@ import { MessageService } from "./message.service";
 
 export class MessageComponent {
   @Input() message: Message;
-  @Output() editClicked = new EventEmitter<string>();
 
   color = "#fec733";
 
   constructor(private messageService: MessageService) {}
 
   onEdit() {
-    this.editClicked.emit('THEMELESS HARDCODORE VALUE!');
+    this.messageService.editMessage(this.message);
   }
 
   onDelete() {
-    this.messageService.deleteMessage(this.message);
+    this.messageService.deleteMessage(this.message)
+      .subscribe(
+        result => console.log(result)
+      );
   }
 
 }
