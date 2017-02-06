@@ -1,6 +1,6 @@
 # Themeless Wonder
 
-Demonstration of Messaging System using **MEAN Stack**.
+CURRENT -- Demonstration of Messaging System using **MEAN Stack**.
 
 Uses:
 
@@ -15,3 +15,12 @@ Uses:
 
 * Fully featured single page message app
 * animated CSS character at bottom of screen
+
+---
+
+CONCEPT A: Force users to write at least 1200 characters before their
+message can be published.
+
+CONCEPT B: Mad Libs Daily Briefing - just a concept, could be funny.
+
+CONCEPT OMEGA: Database of A-Frame based experiences (funny, cool, minimal)
