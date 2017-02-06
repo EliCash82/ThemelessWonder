@@ -25,8 +25,6 @@ import { MessageService } from "./message.service";
 export class MessageComponent {
   @Input() message: Message;
 
-  color = "#fec733";
-
   constructor(private messageService: MessageService) {}
 
   onEdit() {
@@ -38,6 +36,10 @@ export class MessageComponent {
       .subscribe(
         result => console.log(result)
       );
+  }
+
+  belongsToUser() {
+    return localStorage.getItem('userId') == this.message.userId;
   }
 
 }
